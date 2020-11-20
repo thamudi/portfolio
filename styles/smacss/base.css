@@ -1,0 +1,47 @@
+*, a, p{
+    font-family: monospace;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0 20%;
+    position: relative;
+}
+
+
+header {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 100%;
+    margin:5vh 0 20vh 0;
+}
+
+
+header a {
+    font-size: 16px;
+}
+
+main {
+    flex: 1;
+    display: grid;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    margin-bottom: 5vh;
+}
+
+footer {
+    margin-top: 20vh;
+}
+
+a {
+    cursor: pointer;
+}

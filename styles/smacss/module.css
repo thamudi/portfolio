@@ -1,0 +1,17 @@
+.border-line {
+    border: 0.5px solid black;
+    margin: 0 2vw;
+}
+
+.container {
+    margin:0 auto;
+}
+
+.scroll-able {
+    height: 20vh;
+    overflow-y: scroll;
+}
+
+.scroll-able p {
+    margin-bottom:20vh;
+}

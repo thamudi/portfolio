@@ -1,0 +1,14 @@
+a, a:visited{
+    border:0 none transparent;
+    color: rgb(20, 72, 168);
+    text-decoration: none;
+}
+
+section {
+    transition: 2s;
+}
+
+.hide {
+    display: none;
+    transition: 2s;
+}
