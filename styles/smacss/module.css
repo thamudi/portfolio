@@ -13,5 +13,18 @@
 }
 
 .scroll-able p {
-    margin-bottom:20vh;
+    margin: 10vh 0;
+    padding-right: 2vw;
+}
+
+.item-center{
+    margin: auto 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
 }

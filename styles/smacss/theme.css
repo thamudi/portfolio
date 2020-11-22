@@ -1,0 +1,17 @@
+*{
+    background-color: #282c34;
+    color: #ffffff;
+}
+
+a {
+    color: #00c8ff;
+    transition: 1s;
+}
+
+.title {
+    font-size: 4rem;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+}

@@ -12,3 +12,10 @@ section {
     display: none;
     transition: 2s;
 }
+
+a:hover{
+    -webkit-box-shadow: 0px 0px 100px 0px #00c8ff;
+    -moz-box-shadow: 0px 0px 100px 0px #00c8ff;
+    box-shadow: 0px 0px 100px 0px #00c8ff;
+    transition: 1s;
+}
