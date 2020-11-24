@@ -66,18 +66,20 @@
                 </h1>
             </div>
             <div class="border-line"></div>
-            <iframe src="https://thamudi.github.io/quarantine-count-down/index.html" frameborder="0"></iframe>
-            <!-- <div class="scroll-able">
-                <p>
-                    A Full Stack Web Developer
+            <div class="scroll-able">
+                <div class="cont" id="cont">
+                    <canvas id="space" width="300" height="300"></canvas>
+                </div>
+                <p class="sub-title">
+                    <a class="xanh" href="https://thamudi.github.io/quarantine-count-down/index.html">
+                        Quarantine Countdown
+                    </a>
+                    <br>
+                    <span>
+                        A quarantine counter for counting the days you've been locked
+                    </span>
                 </p>
-                <p>
-                    An Instructor
-                </p>
-                <p>
-                    Pizza Lover
-                </p>
-            </div> -->
+            </div>
         </section>
         <section id="about" class="section hide">
             <div class="item-center">
@@ -106,15 +108,15 @@
             </div>
             <div class="border-line"></div>
             <div class="scroll-able flex flex-column">
-                <p class="sub-title">
-                    A Full Stack Web Developer
-                </p>
-                <p class="sub-title">
-                    An Instructor
-                </p>
-                <p class="sub-title">
-                    Pizza Lover
-                </p>
+                <form action="" method="post">
+                    <input type="text" name="" id="" placeholder="Name">
+                    <br>
+                    <input type="email" name="" id="" placeholder="Email">
+                    <br>
+                    <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="submit" value="Contact me">
+                </form>
             </div>
         </section>
     </main>
@@ -131,6 +133,8 @@
     </footer>
 
     <script src="scripts/app.js"></script>
+    <!-- <script src="https://thamudi.github.io/quarantine-count-down/scripts/space.js"></script> -->
+    <script src="scripts/space.js"></script>
 </body>
 
 </html>
