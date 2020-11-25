@@ -52,16 +52,26 @@
                 </div>
             </div>
             <div class="section" id="section1">
-                <div class="slide overlay relative active" id="slide1">
+                <div class="slide  relative active" id="slide1">
                     <div class="intro">
                         <iframe data-src="https://thamudi.github.io/quarantine-count-down/index.html"></iframe>
-                        <p class="abs-class abs-bott txt-center">
-                            A quarantine counter for counting the days you've been locked.
+                        <p class="abs-class abs-mid txt-center z-in-hide">
+                           This is a small project centered around the covid quarantine situation.
+                            <br>
+                            <br>
+                            The idea from this project is to count the days that you have been locked up inside your house.
+                            <br>
+                            <br>
+                            This website was built using pure JS 
+                            <br>
                             <br>
                             <br>
                             <a href="https://thamudi.github.io/quarantine-count-down/index.html">Link</a>
 
                         </p>
+                        <div class="abs-class abs-bott txt-center info">
+                            <div onclick="showInfo(event)" class="pointer border info-border"></div>
+                        </div>
                     </div>
                 </div>
                 <!-- <div class="slide" id="slide2">
@@ -139,6 +149,7 @@
         </div>
     </main>
 
+    <script type="text/javascript" src="scripts/app.js"></script>
     <script type="text/javascript" src="scripts/fullpage.js"></script>
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {

@@ -6,15 +6,6 @@
  *  -----------------------------
 */
 
-function checkNavItem(event) {
-    const navIdList = ['main-nav', 'work-nav', 'about-nav', 'contact-nav']
-    const navId = event.target.id;
-
-    if (navIdList.includes(navId)) {
-        renderSection(navId);
-    }
-}
-
 function scroll(event) {
 
     const eventClassName = event.target.className;
@@ -44,71 +35,56 @@ function scroll(event) {
     }
 }
 
+function showInfo(event) {
+    const paths = event.path;
+    // console.log(paths);
+    paths.forEach(path => {
+        
+        if (path.className) {
+
+            // if(path.className.includes('info')){
+            //     console.log(path.children);
+            //     const child = path.children[0];
+            //     child.classList.toggle('active');
+            // }
+
+            if(path.className.includes('active') && path.className.includes('slide')){
+                path.classList.toggle('overlay');
+            }
+    
+            if(path.className.includes('intro')){
+    
+                // not working ??
+                // path.children.forEach(child => {
+                //     console.log(child);
+                // });
+                const child = path.children[1];
+                child.classList.toggle('z-in-show');
+            }
+        }
+
+    });
+
+
+    
+}
+
+function sendMail(event) {
+    event.preventDefault();
+    
+}
+
 /** 
  *  --------------------
  *  - Render Functions -
  *  --------------------
 */
 
-function checkSectionType(sectionId, scrollType = 'bottom') {
-    switch (sectionId) {
-        case 'main':
-            if (scrollType === 'bottom') {
-                document.getElementById('work').classList.remove('hide');
-                setTimeout(function () {
-                    document.getElementById('main').classList.remove('visually-hidden');
-                }, 20);
-            }
-
-            break;
-        case 'work':
-
-            if (scrollType === 'bottom') {
-                document.getElementById('about').classList.remove('hide');
-                setTimeout(function () {
-                    document.getElementById('work').classList.remove('visually-hidden');
-                }, 20);
-            }
-
-            break;
-
-        case 'about':
-
-            if (scrollType === 'bottom') {
-                document.getElementById('contact').classList.remove('hide');
-                setTimeout(function () {
-                    document.getElementById('about').classList.remove('visually-hidden');
-                }, 20);
-            }
-
-            break;
-        case 'contact':
-            if (scrollType === 'bottom') {
-                document.getElementById('main').classList.remove('hide');
-                setTimeout(function () {
-                    document.getElementById('contact').classList.remove('visually-hidden');
-                }, 20);
-            }
-            break;
-
-        default:
-            break;
-    }
-}
-
-function renderSection(navId) {
-    const targetId = navId.split('-')[0];
-    document.querySelectorAll('.section').forEach(element => {
-        element.classList.add('hide');
-    });
-    document.getElementById(targetId).classList.remove('hide');
-
-}
 
 /** 
  *  -------------------
  *  - Event listeners -
  *  -------------------
 */
-document.getElementById('nav').addEventListener('click', checkNavItem);
-document.getElementById('content').addEventListener('wheel', scroll);
+
+document.getElementById('contact-me').addEventListener('submit', sendMail)

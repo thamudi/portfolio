@@ -34,3 +34,13 @@ input:hover, textarea:hover, input:focus, textarea:focus{
 	border-color: whitesmoke;
 	transition: 1s ease;
 }
+
+
+.border:hover{
+	border-color: #00c8ff;
+}
+
+.info-border.active{
+	border-color: #00c8ff;
+	border-width: 3px;
+}
