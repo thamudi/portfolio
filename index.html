@@ -19,10 +19,10 @@
     <header id="nav">
         <nav>
             <ul id="menu">
-                <li data-menuanchor="main" class="active"><a href="#main">/</a></li>
-                <li data-menuanchor="myWork"><a href="#myWork">My Work</a></li>
-                <li data-menuanchor="about"><a href="#about">About Me</a></li>
-                <li data-menuanchor="contact"><a href="#contact">Contact Me</a></li>
+                <li data-menuanchor="main" class="active"><a class="aqua-blue sub-title" href="#main">/</a></li>
+                <li data-menuanchor="myWork"><a class="aqua-blue sub-title" href="#myWork">My Work</a></li>
+                <li data-menuanchor="about"><a class="aqua-blue sub-title" href="#about">About Me</a></li>
+                <li data-menuanchor="contact"><a class="aqua-blue sub-title" href="#contact">Contact Me</a></li>
             </ul>
         </nav>
     </header>
@@ -81,11 +81,15 @@
                 </div> -->
             </div>
             <div class="section" id="section2">
-                <div class="item-center">
-                    <img class="avatar-user" src="https://avatars0.githubusercontent.com/u/18720062?s=460&u=aea1cb89be2ff8631aa4bbc03f1e2eb055686289&v=4" alt="Tamim Hamoudi" srcset="">
-                    <fieldset>
-                        <span></span>
-                    </fieldset>
+                <div class="item-center avatar-container round-radius">
+                    <a href="https://github.com/thamudi">
+                        <img class="avatar round-radius"
+                            src="https://avatars0.githubusercontent.com/u/18720062?s=460&u=aea1cb89be2ff8631aa4bbc03f1e2eb055686289&v=4"
+                            alt="Tamim Hamoudi" srcset="">
+                        <div class="middle">
+                            <img src="img/github-brands.svg" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="border-line"></div>
                 <div class="flex flex-column item-center about">
@@ -147,7 +151,8 @@
             anchors: ['main', 'myWork', 'about', 'contact'],
             menu: '#menu',
             loopTop: true,
-            loopBottom: true
+            loopBottom: true,
+            scrollingSpeed: 1500
         });
     </script>
 </body>

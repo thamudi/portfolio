@@ -4,6 +4,7 @@
 
 a {
     cursor: pointer;
+    transition: 1s ease;
 }
 
 iframe {
@@ -16,4 +17,8 @@ iframe {
 }
 p {
     margin: 1vh 0;
+}
+
+img {
+    width: 100%;
 }

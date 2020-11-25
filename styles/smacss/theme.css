@@ -1,10 +1,10 @@
 * {
-    color: white;
+    color: whitesmoke;
 }
 
+
 header a {
-    color: #00c8ff;
-    transition: 1s;
+	transition: 1s;
 }
 
 
@@ -37,10 +37,12 @@ p{
 	display:inline-block;
 	margin: 10px;
 	color: #000;
+	transition: 2s;
 }
 
 #menu li a{
 	text-decoration:none;
+	transition: 1s;
 }
 
 #menu li a,
@@ -66,8 +68,26 @@ p{
     line-height: normal;
 }
 
-.avatar-user {
-    border-radius: 50%;
+.avatar{
+	opacity: 1;
+	transition: 1s ease;
+}
+
+.avatar-container{
+	position: relative;
+	background-color: #00c8ff41;
+	border: 2px solid black;
+}
+
+.middle {
+	transition: 1s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	text-align: center;
 }
 
 input, textarea {
@@ -78,10 +98,12 @@ input, textarea {
 	margin: 1.5vh;
 	width: 100%;
 	height: 5vh;
+	transition: 1s ease;
 
 }
 textarea {
 	height: 10vh;
+	resize: none;
 }
 
 .flex>input{
