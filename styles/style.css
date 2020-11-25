@@ -1,25 +1,4 @@
-/* width */
-::-webkit-scrollbar {
-    /* width: 5px; */
-    width: 2px;
-    margin: auto;
-    transition: 3s;
-  }
-  
-/* Track */
-::-webkit-scrollbar-track {
-    background: transparent; 
-}
-   
-/* Handle */
-::-webkit-scrollbar-thumb {
-    /* background: #888;  */
-    background: #000; 
-    transition: 3s;
-}
-  
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-    transition: 3s;
+.section .fp-tableCell{
+    display: flex;
+    justify-content: center;
 }

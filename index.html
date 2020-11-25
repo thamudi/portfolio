@@ -5,136 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="styles/fullpage.css" />
     <link rel="stylesheet" href="styles/smacss/base.css">
-    <link rel="stylesheet" href="styles/smacss/layout.css">
-    <link rel="stylesheet" href="styles/smacss/module.css">
     <link rel="stylesheet" href="styles/smacss/state.css">
+    <link rel="stylesheet" href="styles/smacss/module.css">
     <link rel="stylesheet" href="styles/smacss/theme.css">
     <link rel="stylesheet" href="styles/style.css">
+
     <title>Thamudi</title>
 </head>
 
 <body>
     <header id="nav">
-        <section>
-            <div>
-                <a id="main-nav">
-                    /
-                </a>
-            </div>
-        </section>
         <nav>
-            <a id="work-nav">
-                work
-            </a>
-            <a id="about-nav">
-                about
-            </a>
-            <a id="contact-nav">
-                contact
-            </a>
+            <ul id="menu">
+                <li data-menuanchor="main" class="active"><a href="#main">/</a></li>
+                <li data-menuanchor="myWork"><a href="#myWork">My Work</a></li>
+                <li data-menuanchor="about"><a href="#about">About Me</a></li>
+                <li data-menuanchor="contact"><a href="#contact">Contact Me</a></li>
+            </ul>
         </nav>
     </header>
 
     <main id="content">
-        <section id="main" class="section">
-            <div class="item-center">
-                <h1 class="title">
-                    Thamudi
-                </h1>
-                <span>
-                    Tamim Hamoudi
-                </span>
-            </div>
-            <div class="border-line"></div>
-            <div class="scroll-able flex flex-column">
-                <p class="sub-title">
-                    A Full Stack Web Developer
-                </p>
-                <p class="sub-title">
-                    An Instructor
-                </p>
-                <p class="sub-title">
-                    Flammkuchen Lover
-                </p>
-            </div>
-        </section>
-        <section id="work" class="section hide">
-            <div class="item-center">
-                <h1 class="title">
-                    My Work
-                </h1>
-            </div>
-            <div class="border-line"></div>
-            <div class="scroll-able">
-                <div class="cont" id="cont">
-                    <canvas id="space" width="300" height="300"></canvas>
-                </div>
-                <p class="sub-title">
-                    <a class="xanh" href="https://thamudi.github.io/quarantine-count-down/index.html">
-                        Quarantine Countdown
-                    </a>
-                    <br>
+        <div id="fullpage">
+            <div class="section" id="section0">
+                <div class="item-center">
+                    <h1 class="title">
+                        Thamudi
+                    </h1>
                     <span>
-                        A quarantine counter for counting the days you've been locked
+                        Tamim Hamoudi
                     </span>
-                </p>
+                </div>
+                <div class="border-line"></div>
+                <div class="flex flex-column item-center">
+                    <p class="sub-title">
+                        A Full Stack Web Developer
+                    </p>
+                    <p class="sub-title">
+                        An Instructor
+                    </p>
+                    <p class="sub-title">
+                        Flammkuchen Lover
+                    </p>
+                </div>
             </div>
-        </section>
-        <section id="about" class="section hide">
-            <div class="item-center">
-                <h1 class="title">
-                    About me
-                </h1>
+            <div class="section" id="section1">
+                <div class="slide overlay relative active" id="slide1">
+                    <div class="intro">
+                        <iframe data-src="https://thamudi.github.io/quarantine-count-down/index.html"></iframe>
+                        <p class="abs-class abs-bott txt-center">
+                            A quarantine counter for counting the days you've been locked.
+                            <br>
+                            <br>
+                            <a href="https://thamudi.github.io/quarantine-count-down/index.html">Link</a>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="slide" id="slide2">
+                    <div class="intro">
+                        <iframe data-src="https://thamudi.github.io/portfolio/"></iframe>
+                        <p class="abs-class abs-bott txt-center">
+                            A personal portfolio.
+                            <br>
+                            <br>
+                            <a href="https://thamudi.github.io/portfolio/">Link</a>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- <div class="slide" id="slide3">
+                    <h1 class="title">Slide 2.3</h1>
+                </div> -->
             </div>
-            <div class="border-line"></div>
-            <div class="scroll-able flex flex-column">
-                <p class="sub-title">
-                    A Full Stack Web Developer
-                </p>
-                <p class="sub-title">
-                    An Instructor
-                </p>
-                <p class="sub-title">
-                    Pizza Lover
-                </p>
+            <div class="section" id="section2">
+                <div class="item-center">
+                    <img class="avatar-user" src="https://avatars0.githubusercontent.com/u/18720062?s=460&u=aea1cb89be2ff8631aa4bbc03f1e2eb055686289&v=4" alt="Tamim Hamoudi" srcset="">
+                    <fieldset>
+                        <span></span>
+                    </fieldset>
+                </div>
+                <div class="border-line"></div>
+                <div class="flex flex-column item-center about">
+                    <p class="sub-title">I am a graduate student from the Applied Science University of Amman,
+                        graduating in June 2016 with a Bachelor degree in Software Engineering.
+                    </p>
+                    <p class="sub-title">
+                        Over the years I have worked in multiple Web software Projects ranging from Front end solutions
+                        using Angular, JQuery, Javascript and Back end frameworks such as: Express, Laravel, Django
+                    </p>
+                    <p class="sub-title">
+                        Previously, I worked at Robu, a proactive financial planning fintech startup solution where it
+                        provides visibility & insights to quantify the financial impact of ones business choices.
+                    </p>
+                    <p class="sub-title">
+                        Now I am an Instructor at ASAC (Abdul Alziz Ghurair school of advanced computing), who teaches
+                        young striving developers the skills I aquired over the years to become a full stack Web
+                        developers.
+                    </p>
+                    <p class="sub-title">
+                        My interests lie in solving problems related to large-scale distributed software systems, and
+                        teaching people programming and web technologies.
+                    </p>
+                </div>
             </div>
-        </section>
-        <section id="contact" class="section hide">
-            <div class="item-center">
-                <h1 class="title">
-                    Contact
-                </h1>
+            <div class="section" id="section3">
+                <div class="item-center">
+                    <h1 class="title margin-4-vh">Need something?</h1>
+                    <p class="sub-title margin-4-vh txt-right">
+                        Feel free to contact me!
+                    </p>
+                    <form id="contact-me" action="" method="post" class="flex flex-wrap">
+                        <input type="text" name="" id="" placeholder="First Name" required>
+                        <br>
+                        <input type="text" name="" id="" placeholder="Last Name" required>
+                        <br>
+                        <input type="email" name="" id="" placeholder="Email" required>
+                        <br>
+                        <input type="tel" name="" id="" placeholder="Phone Number">
+                        <br>
+                        <textarea placeholder="Your message" name="" id="" required></textarea>
+                        <br>
+                        <input class="btn" type="submit" value="Contact me">
+                    </form>
+                </div>
             </div>
-            <div class="border-line"></div>
-            <div class="scroll-able flex flex-column">
-                <form action="" method="post">
-                    <input type="text" name="" id="" placeholder="Name">
-                    <br>
-                    <input type="email" name="" id="" placeholder="Email">
-                    <br>
-                    <textarea placeholder="Your message" name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="submit" value="Contact me">
-                </form>
-            </div>
-        </section>
+        </div>
     </main>
 
-    <footer>
-        <!-- <section>
-            <p>
-                © Tamim Hamoudi
-            </p>
-            <p>
-                Powered by &#x1F355;
-            </p>
-        </section> -->
-    </footer>
-
-    <script src="scripts/app.js"></script>
-    <!-- <script src="https://thamudi.github.io/quarantine-count-down/scripts/space.js"></script> -->
-    <script src="scripts/space.js"></script>
+    <script type="text/javascript" src="scripts/fullpage.js"></script>
+    <script type="text/javascript">
+        var myFullpage = new fullpage('#fullpage', {
+            sectionsColor: [
+                '#282c34',
+                '#282c34',
+                '#282c34',
+                '#282c34',
+            ],
+            anchors: ['main', 'myWork', 'about', 'contact'],
+            menu: '#menu',
+            loopTop: true,
+            loopBottom: true
+        });
+    </script>
 </body>
 
 </html>

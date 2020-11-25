@@ -1,6 +1,5 @@
-*{
-    background-color: #282c34;
-    color: #ffffff;
+* {
+    color: white;
 }
 
 header a {
@@ -8,24 +7,88 @@ header a {
     transition: 1s;
 }
 
-.title {
-    font-size: 4rem;
-}
-
-.sub-title {
-    font-size: 1.2rem;
-}
 
 span {
     font-size: 0.8rem;
 }
 
-.cont{
-    overflow: hidden;
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+}
+
+#menu li a{
+	text-decoration:none;
+}
+
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.about {
+    width: 50%;
+    line-break: auto;
+    line-height: normal;
+}
+
+.avatar-user {
+    border-radius: 50%;
+}
+
+input, textarea {
+	background-color: transparent;
+	border: unset;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+	margin: 1.5vh;
+	width: 100%;
+	height: 5vh;
+
+}
+textarea {
+	height: 10vh;
+}
+
+.flex>input{
+    flex-grow: 1;
+    width: 40%;
+}
+
+#contact-me input:nth-of-type(5){
     width: 100%;
-    height: 100vh;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
 }
