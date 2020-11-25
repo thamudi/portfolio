@@ -1,6 +1,7 @@
 .border-line {
     border: 0.5px solid black;
-    margin: 0 2vw;
+    /* margin: 0 2vw; */
+    margin: 10% 2vw;
 }
 
 .container {
@@ -27,4 +28,52 @@
 
 .flex-column {
     flex-direction: column;
+    columns: 2;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+
+.title {
+    font-size: 4rem;
+}
+
+.sub-title {
+    font-size: 1.2rem;
+}
+
+.relative{
+    position: relative;
+}
+
+.intro .abs-class {
+    position: absolute;
+    width: 100%;
+}
+
+.abs-bott {
+    bottom: 1.5rem;
+    left: 0;
+}
+
+.overlay {
+    background-color: rgba(0,0,0,0.5);
+}
+.txt-center{
+    text-align: center;
+}
+
+.btn {
+	border: 2px solid black;
+	background-color: rgb(31, 31, 31);
+}
+
+.margin-4-vh {
+    margin: 4vh 0;
+}
+
+.txt-right{
+    text-align: right;
 }

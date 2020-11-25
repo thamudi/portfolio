@@ -1,21 +1,7 @@
-a, a:visited{
-    border:0 none transparent;
-    color: rgb(20, 72, 168);
-    text-decoration: none;
+#menu li:hover, #menu li.active{
+	border-bottom: whitesmoke 1px solid;
 }
 
-section {
-    transition: 2s;
-}
-
-.hide {
-    display: none;
-    transition: 2s;
-}
-
-a:hover{
-    -webkit-box-shadow: 0px 0px 100px 0px #00c8ff;
-    -moz-box-shadow: 0px 0px 100px 0px #00c8ff;
-    box-shadow: 0px 0px 100px 0px #00c8ff;
-    transition: 1s;
+input:focus, textarea:focus{
+	outline: unset;
 }
