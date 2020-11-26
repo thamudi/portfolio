@@ -117,7 +117,7 @@
 }
 
 .border{
-    border: 2px solid whitesmoke;
+    border: 1px solid whitesmoke;
     width: 0.2vh;
     margin: auto;
     padding: 2vh;
@@ -137,4 +137,16 @@
 
 .white-smoke{
     color: whitesmoke;
+}
+
+/* 
+ ----------------
+ ---- Fonts ----
+ ----------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
+
+.cinzel{
+    font-family: 'Cinzel', serif;
 }

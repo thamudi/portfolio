@@ -6,72 +6,20 @@
  *  -----------------------------
 */
 
-function scroll(event) {
-
-    const eventClassName = event.target.className;
-
-    if (eventClassName.includes('scroll-able') || eventClassName.includes('sub-title')) {
-        // get the scroll-able section
-        const scrollAble = event.path[0].className.includes('scroll-able') ? event.path[0] : event.path[1];
-        if (Math.ceil(scrollAble.scrollHeight - scrollAble.scrollTop) === scrollAble.clientHeight) {
-            // get the parent container
-            const parentNodeSection = event.path[1].className.includes('section') ? event.path[1] : event.path[2];
-            const section = document.getElementById(parentNodeSection.id);
-            // reset the scroll
-            // this section hide
-            section.classList.add('visually-hidden');
-            section.addEventListener('transitionend', function (e) {
-                scrollAble.scrollTop = 0;
-                section.classList.add('hide');
-                // display the next section
-                checkSectionType(parentNodeSection.id);
-            }, {
-                capture: false,
-                once: true,
-                passive: false
-            });
-        }
-
-    }
-}
-
-function showInfo(event) {
-    const paths = event.path;
-    // console.log(paths);
-    paths.forEach(path => {
-        
-        if (path.className) {
-
-            // if(path.className.includes('info')){
-            //     console.log(path.children);
-            //     const child = path.children[0];
-            //     child.classList.toggle('active');
-            // }
-
-            if(path.className.includes('active') && path.className.includes('slide')){
-                path.classList.toggle('overlay');
-            }
-    
-            if(path.className.includes('intro')){
-    
-                // not working ??
-                // path.children.forEach(child => {
-                //     console.log(child);
-                // });
-                const child = path.children[1];
-                child.classList.toggle('z-in-show');
-            }
-        }
-
-    });
-
-
-    
-}
-
-function sendMail(event) {
+function sendMail(event) { // send mail using fetch API
     event.preventDefault();
+
+    const status = true;
     
+
+    if (status) { // check status response from the promise 
+        renderMessage('modal-success');
+    } else {
+        renderMessage('modal-fail')
+    }
+
+
+
 }
 
 /** 
@@ -79,7 +27,50 @@ function sendMail(event) {
  *  - Render Functions -
  *  --------------------
 */
+function toggleInfo(event) { // toggles slides info to show
+    const paths = event.path; // get the paths of all the possible elements within the clicked event
 
+    paths.forEach(path => {
+
+        if (path.className) { // check if the current path has a class
+
+            if (path.className.includes('info')) {
+                path.classList.toggle('active');
+            }
+
+            if (path.className.includes('active') && path.className.includes('slide')) { // check if its an active slide and add an overlay
+                path.classList.toggle('overlay'); // toggle on/ off the overlay 
+            }
+
+            if (path.className.includes('intro')) { // check if its the parent element and show the text
+
+                // not working ??
+                // path.children.forEach(child => {
+                //     console.log(child);
+                // });
+
+                const child = path.children[1];
+                child.classList.toggle('z-in-show'); // toggle on/ off the z-index of the text
+            }
+        }
+
+    });
+
+}
+
+function renderMessage(modalId) {
+    
+    let count = 0;
+
+    const loop = setInterval(() => {
+        if(count<=1){
+            document.getElementById(modalId).classList.toggle('opa-show'); 
+            count++;
+        } else {
+            clearInterval(loop)
+        }
+    }, 2000);
+}
 
 /** 
  *  -------------------
@@ -87,4 +78,4 @@ function sendMail(event) {
  *  -------------------
 */
 
-document.getElementById('contact-me').addEventListener('submit', sendMail)
+document.getElementById('contact-me').addEventListener('submit', sendMail);

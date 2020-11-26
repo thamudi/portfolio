@@ -44,3 +44,13 @@ input:hover, textarea:hover, input:focus, textarea:focus{
 	border-color: #00c8ff;
 	border-width: 3px;
 }
+
+.form-modal{
+	opacity: 0;
+	transition: 3s ease;
+}
+
+.opa-show{
+	opacity: 1;
+	transition: 3s ease;
+}
