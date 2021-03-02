@@ -15,6 +15,7 @@ class MailBody {
     this.email = email;
     this.subject = subj;
     this.message = msg;
+    this.timeSent = new Date();
     this.stringifiedData = this.stringifyData();
   }
 
