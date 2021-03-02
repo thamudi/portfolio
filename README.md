@@ -15,7 +15,7 @@ Licence: MIT
 
 [![Website](https://img.shields.io/website?down_color=red&down_message=down&style=flat-square&up_color=blue&up_message=up%20and%20running&url=https%3A%2F%2Fcity-explorer-api-thamudi.herokuapp.com%2F)](https://thamudi.github.io/portfolio/index.html)
 
-[![GitHub license](https://img.shields.io/github/license/thamudi/portfolio?style=flat-square)](https://github.com/thamudi/portfolio/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/thamudi/portfolio?style=flat-square)](https://github.com/thamudi/portfolio/blob/main/LICENSE)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/thamudi/portfolio?style=flat-square)
 
