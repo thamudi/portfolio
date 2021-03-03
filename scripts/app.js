@@ -7,6 +7,7 @@
 
 // const END_POINT = "http://127.0.0.1:8080/send-mail";
 const END_POINT = "https://express-mailer-thamudi.herokuapp.com/send-mail";
+const button = document.getElementById("contact-form-submit");
 
 class MailBody {
   constructor(fname, lname, email, subj, msg) {
@@ -33,6 +34,8 @@ class MailBody {
 function sendMail(event) {
   // send mail using fetch API
   event.preventDefault();
+
+  button.disabled = true;
 
   const mail = new MailBody(
     event.target.fname.value,
@@ -110,6 +113,16 @@ function renderMessage(modalId) {
       clearInterval(loop);
     }
   }, 2000);
+  document.getElementById("contact-me").reset();
+  button.disabled = false;
+}
+
+function openNav() {
+  document.getElementById("mobile-menu").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("mobile-menu").style.height = "0%";
 }
 
 /**

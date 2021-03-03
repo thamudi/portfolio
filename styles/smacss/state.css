@@ -1,56 +1,81 @@
-#menu li:hover, #menu li.active{
-	/* border-bottom: whitesmoke 1px solid; */
-	border-bottom: #00c8ff 1px solid;
-	transition: 1s ease;
+#menu li:hover,
+#menu li.active {
+  /* border-bottom: whitesmoke 1px solid; */
+  border-bottom: #00c8ff 1px solid;
+  transition: 1s ease;
 }
 
-input:focus, textarea:focus{
-	outline: unset;
+input:focus,
+textarea:focus {
+  outline: unset;
 }
 
 .avatar-container:hover .avatar {
-	opacity: 0.3;
-	transition: 1s ease;
+  opacity: 0.3;
+  transition: 1s ease;
 }
-  
+
 .avatar-container:hover .middle {
-	opacity: 1;
-	transition: 1s ease;
+  opacity: 1;
+  transition: 1s ease;
 }
 
-a:hover{
-	color:#00c8ff;
-	transition: 1s ease;
+a:hover {
+  color: #00c8ff;
+  transition: 1s ease;
 }
 
-.btn:hover{
-	transition: 1s ease;
-	/* background-color: rgb(61, 61, 61); */
-	background-color: #00c8ff41;
-	border-color: whitesmoke;
+.btn:hover {
+  transition: 1s ease;
+  /* background-color: rgb(61, 61, 61); */
+  background-color: #00c8ff41;
+  border-color: whitesmoke;
 }
 
-input:hover, textarea:hover, input:focus, textarea:focus{
-	border-color: whitesmoke;
-	transition: 1s ease;
+.btn:disabled,
+.btn[disabled] {
+  background-color: #ff000041;
+  cursor: not-allowed;
+  transition: 1s ease;
 }
 
-
-.border:hover{
-	border-color: #00c8ff;
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+  border-color: whitesmoke;
+  transition: 1s ease;
 }
 
-.info-border.active{
-	border-color: #00c8ff;
-	border-width: 3px;
+.border:hover {
+  border-color: #00c8ff;
 }
 
-.form-modal{
-	opacity: 0;
-	transition: 3s ease;
+.info-border.active {
+  border-color: #00c8ff;
+  border-width: 3px;
 }
 
-.opa-show{
-	opacity: 1;
-	transition: 3s ease;
+.form-modal {
+  opacity: 0;
+  transition: 3s ease;
+}
+
+.opa-show {
+  opacity: 1;
+  transition: 2s ease;
+}
+
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .burger {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
 }

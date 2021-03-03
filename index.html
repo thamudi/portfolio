@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/slash_forward_box.png">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" type="text/css" href="styles/fullpage.css" />
     <link rel="stylesheet" href="styles/smacss/base.css">
@@ -24,6 +25,17 @@
                 <li data-menuanchor="about"><a class="aqua-blue sub-title" href="#about">About Me</a></li>
                 <li data-menuanchor="contact"><a class="aqua-blue sub-title" href="#contact">Contact Me</a></li>
             </ul>
+
+            <div id="mobile-menu" class="overlay">
+                <a href="javascript:void(0)" class="closebtn aqua-blue" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <div data-menuanchor="main" class="active"><a class="aqua-blue sub-title" href="#main">/</a></div>
+                    <div data-menuanchor="myWork"><a class="aqua-blue sub-title" href="#myWork">My Work</a></div>
+                    <div data-menuanchor="about"><a class="aqua-blue sub-title" href="#about">About Me</a></div>
+                    <div data-menuanchor="contact"><a class="aqua-blue sub-title" href="#contact">Contact Me</a></div>
+                </div>
+            </div>
+            <span class="burger aqua-blue" onclick="openNav()">/</span>
         </nav>
     </header>
 
@@ -143,11 +155,11 @@
                         <br>
                         <input type="email" name="email" id="" placeholder="Email" required>
                         <br>
-                        <input type="tel" name="subj" id="" placeholder="Subject" required>
+                        <input type="text" name="subj" id="" placeholder="Subject" required>
                         <br>
                         <textarea placeholder="Your message" name="msg" id="" required></textarea>
                         <br>
-                        <input class="btn" type="submit" value="Contact me">
+                        <input class="btn" type="submit" id="contact-form-submit" value="Contact me">
                     </form>
                 </div>
             </div>
@@ -168,7 +180,9 @@
             menu: '#menu',
             loopTop: true,
             loopBottom: true,
-            scrollingSpeed: 1500
+            scrollingSpeed: 1500,
+            responsiveWidth: 900,
+            afterResponsive: function (isResponsive) { }
         });
     </script>
 </body>

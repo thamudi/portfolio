@@ -1,4 +1,41 @@
-.section .fp-tableCell{
-    display: flex;
-    justify-content: center;
+.section .fp-tableCell {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+  .section .fp-tableCell {
+    display: table-cell;
+  }
+
+  .item-center {
+    margin: auto;
+    text-align: center;
+  }
+
+  .item-center.avatar-container {
+    width: 30vw;
+    margin: 10% auto;
+  }
+
+  .txt-right {
+    text-align: center;
+    margin: auto 10%;
+  }
+
+  #contact-me.flex {
+    display: block;
+  }
+
+  textarea {
+    width: 90%;
+  }
+
+  #contact-me input:nth-of-type(5) {
+    width: 90%;
+  }
+
+  .flex > input {
+    width: 90%;
+  }
 }
