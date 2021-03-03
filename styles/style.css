@@ -29,6 +29,7 @@
 
   textarea {
     width: 90%;
+    height: 150px;
   }
 
   #contact-me input:nth-of-type(5) {
@@ -37,5 +38,6 @@
 
   .flex > input {
     width: 90%;
+    height: 50px;
   }
 }

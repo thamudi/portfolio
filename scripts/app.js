@@ -84,7 +84,7 @@ function toggleInfo(event) {
         path.className.includes("slide")
       ) {
         // check if its an active slide and add an overlay
-        path.classList.toggle("overlay"); // toggle on/ off the overlay
+        path.classList.toggle("work-overlay"); // toggle on/ off the overlay
       }
 
       if (path.className.includes("intro")) {
