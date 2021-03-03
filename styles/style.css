@@ -3,6 +3,10 @@
   justify-content: center;
 }
 
+#work-mobile {
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .section .fp-tableCell {
     display: table-cell;
@@ -39,5 +43,27 @@
   .flex > input {
     width: 90%;
     height: 50px;
+  }
+
+  #work-desktop {
+    display: none;
+  }
+
+  #work-mobile {
+    display: block;
+  }
+
+  div#work-mobile .flex.flex-column.item-center {
+    padding: 5%;
+  }
+
+  #work-mobile .title {
+    font-size: 100%;
+    text-align: left;
+  }
+
+  #work-mobile .sub-title {
+    font-size: 1rem;
+    text-align: right;
   }
 }
