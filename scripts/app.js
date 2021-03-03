@@ -117,12 +117,17 @@ function renderMessage(modalId) {
   button.disabled = false;
 }
 
-function openNav() {
-  document.getElementById("mobile-menu").style.height = "100%";
-}
-
-function closeNav() {
-  document.getElementById("mobile-menu").style.height = "0%";
+function toggleNav() {
+  const element = document.getElementById("mobile-menu");
+  if (element.classList.contains("active")) {
+    document.getElementById("mobile-menu").style.height = "0%";
+    element.classList.remove("active");
+    document.getElementById("burger-menu").innerHTML = "/";
+  } else {
+    document.getElementById("mobile-menu").style.height = "100%";
+    element.classList.add("active");
+    document.getElementById("burger-menu").innerHTML = "../";
+  }
 }
 
 /**

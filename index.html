@@ -27,7 +27,6 @@
             </ul>
 
             <div id="mobile-menu" class="overlay">
-                <a href="javascript:void(0)" class="closebtn aqua-blue" onclick="closeNav()">..&nbsp</a>
                 <div class="overlay-content">
                     <div data-menuanchor="main" class="active"><a class="aqua-blue sub-title" href="#main">/</a></div>
                     <div data-menuanchor="myWork"><a class="aqua-blue sub-title" href="#myWork">My Work</a></div>
@@ -35,7 +34,7 @@
                     <div data-menuanchor="contact"><a class="aqua-blue sub-title" href="#contact">Contact Me</a></div>
                 </div>
             </div>
-            <span class="burger aqua-blue" onclick="openNav()">&nbsp/</span>
+            <span id="burger-menu" class="burger aqua-blue" onclick="toggleNav()">&nbsp/</span>
         </nav>
     </header>
 
@@ -102,7 +101,6 @@
                             situation.
                         </p>
                     </div>
-                    <div class="border-line"></div>
                 </div>
 
                 <!-- <div class="slide" id="slide2">
