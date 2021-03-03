@@ -66,4 +66,9 @@
     font-size: 1rem;
     text-align: right;
   }
+
+  .about {
+    text-align: left;
+    width: 85%;
+  }
 }
