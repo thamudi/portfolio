@@ -154,6 +154,8 @@ textarea {
   font-size: 36px;
   display: block;
   transition: 0.3s;
+  width: fit-content;
+  margin: auto;
 }
 
 .overlay a:hover,

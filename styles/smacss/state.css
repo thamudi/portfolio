@@ -1,8 +1,10 @@
 #menu li:hover,
-#menu li.active {
-  /* border-bottom: whitesmoke 1px solid; */
-  border-bottom: #00c8ff 1px solid;
+#menu li.active,
+#menu li.active a,
+.overlay a.sub-title:hover {
   transition: 1s ease;
+  color: #00c8ff;
+  border-bottom: #00c8ff 1px solid;
 }
 
 input:focus,
@@ -70,6 +72,34 @@ textarea:focus {
   display: none;
 }
 
+.white-smoke:hover {
+  color: #00c8ff;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .rotate-me {
+    animation: spin-to-win infinite 20s linear;
+  }
+}
+
+@keyframes spin-to-win {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 900px) {
   .burger {
     display: block;

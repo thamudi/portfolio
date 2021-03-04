@@ -117,11 +117,12 @@
 }
 
 .border {
-  border: 1px solid whitesmoke;
+  border: 2px solid #00c8ff;
+  /* border: 1px solid whitesmoke; */
   width: 0.2vh;
   margin: auto;
   padding: 2vh;
-  transform: rotate(45deg);
+  /* transform: rotate(45deg); */
   transition: 1s ease;
 }
 
@@ -130,10 +131,6 @@
  ---- Colors ----
  ----------------
 */
-
-.aqua-blue {
-  color: #00c8ff;
-}
 
 .white-smoke {
   color: whitesmoke;
