@@ -9,7 +9,7 @@ Authors: Tamim Hamoudi
 
 A simple website to display personal work and a small introduction
 
-Licence: MIT
+Licence: AGPL-3.0 License
 
 ## Status
 
