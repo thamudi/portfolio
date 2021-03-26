@@ -1,3 +1,10 @@
+@import '/styles/fullpage.css';
+@import 'smacss/base.css';
+@import 'smacss/layout.css';
+@import 'smacss/module.css';
+@import 'smacss/state.css';
+@import 'smacss/theme.css';
+
 .section .fp-tableCell {
   display: flex;
   justify-content: center;
