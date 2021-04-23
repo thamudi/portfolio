@@ -97,8 +97,8 @@ input,
 textarea {
   background-color: transparent;
   border: unset;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
+  border-top: 2px solid rgb(140, 130, 115);
+  border-bottom: 2px solid rgb(140, 130, 115);
   margin: 1.5vh;
   width: 100%;
   height: 5vh;
