@@ -90,6 +90,10 @@ textarea {
   transition: 1s ease;
 }
 
+.github-img{
+  height: 100px;
+}
+
 /**
  *  -------------------
  *  - Mobile Nav -
