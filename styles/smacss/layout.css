@@ -127,6 +127,7 @@ p.abs-class {
 */
 
 .burger {
+  display: none;
   z-index: 1;
   position: fixed;
   cursor: pointer;

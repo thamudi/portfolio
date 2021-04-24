@@ -10,6 +10,11 @@ p {
   color: whitesmoke;
 }
 
+body{
+  background-color: #151617;
+  margin: 0;
+}
+
 header, a {
   transition: 1s ease;
 }

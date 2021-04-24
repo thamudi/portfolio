@@ -68,9 +68,7 @@ textarea:focus {
   transition: 2s ease;
 }
 
-.burger {
-  display: none;
-}
+
 
 .white-smoke:hover {
   color: #00c8ff;
