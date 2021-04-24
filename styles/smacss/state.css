@@ -100,13 +100,3 @@ textarea:focus {
     transform: rotate(360deg);
   }
 }
-
-@media screen and (max-width: 900px) {
-  .burger {
-    display: block;
-  }
-
-  #menu {
-    display: none;
-  }
-}
