@@ -3,24 +3,25 @@
 *,
 a,
 p {
-  font-family: "Source Code Pro", monospace;
-  -webkit-font-smoothing: antialiased;
+  font-family            : "Source Code Pro", monospace;
+  -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 a {
-  cursor: pointer;
+  cursor    : pointer;
   transition: 1s ease;
 }
 
 iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  top     : 0;
+  left    : 0;
+  width   : 100%;
+  height  : 100%;
+  z-index : -1;
 }
+
 p {
   margin: 1vh 0;
 }

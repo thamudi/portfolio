@@ -2,8 +2,8 @@
 #menu li.active,
 #menu li.active a,
 .overlay a.sub-title:hover {
-  transition: 1s ease;
-  color: #00c8ff;
+  transition   : 1s ease;
+  color        : #00c8ff;
   border-bottom: #00c8ff 1px solid;
 }
 
@@ -13,32 +13,32 @@ textarea:focus {
 }
 
 .avatar-container:hover .avatar {
-  opacity: 0.3;
+  opacity   : 0.3;
   transition: 1s ease;
 }
 
 .avatar-container:hover .middle {
-  opacity: 1;
+  opacity   : 1;
   transition: 1s ease;
 }
 
 a:hover {
-  color: #00c8ff;
+  color     : #00c8ff;
   transition: 1s ease;
 }
 
 .btn:hover {
-  transition: 1s ease;
+  transition         : 1s ease;
   /* background-color: rgb(61, 61, 61); */
-  background-color: #00c8ff41;
-  border-color: whitesmoke;
+  background-color   : #00c8ff41;
+  border-color       : whitesmoke;
 }
 
 .btn:disabled,
 .btn[disabled] {
   background-color: #ff000041;
-  cursor: not-allowed;
-  transition: 1s ease;
+  cursor          : not-allowed;
+  transition      : 1s ease;
 }
 
 input:hover,
@@ -46,7 +46,7 @@ textarea:hover,
 input:focus,
 textarea:focus {
   border-color: whitesmoke;
-  transition: 1s ease;
+  transition  : 1s ease;
 }
 
 .border:hover {
@@ -59,12 +59,12 @@ textarea:focus {
 }
 
 .form-modal {
-  opacity: 0;
+  opacity   : 0;
   transition: 3s ease;
 }
 
 .opa-show {
-  opacity: 1;
+  opacity   : 1;
   transition: 2s ease;
 }
 
@@ -96,10 +96,12 @@ textarea:focus {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
+
 @media screen and (max-width: 900px) {
   .burger {
     display: block;

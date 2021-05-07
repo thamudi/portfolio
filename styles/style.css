@@ -1,5 +1,5 @@
 .section .fp-tableCell {
-  display: flex;
+  display        : flex;
   justify-content: center;
 }
 
@@ -17,18 +17,18 @@ p.abs-class {
   }
 
   .item-center {
-    margin: auto;
+    margin    : auto;
     text-align: center;
   }
 
   .item-center.avatar-container {
-    width: 30vw;
+    width : 30vw;
     margin: 10% auto;
   }
 
   .txt-right {
     text-align: center;
-    margin: auto 10%;
+    margin    : auto 10%;
   }
 
   #contact-me.flex {
@@ -36,7 +36,7 @@ p.abs-class {
   }
 
   textarea {
-    width: 90%;
+    width : 90%;
     height: 150px;
   }
 
@@ -44,8 +44,8 @@ p.abs-class {
     width: 90%;
   }
 
-  .flex > input {
-    width: 90%;
+  .flex>input {
+    width : 90%;
     height: 50px;
   }
 
@@ -62,17 +62,17 @@ p.abs-class {
   }
 
   #work-mobile .title {
-    font-size: 100%;
+    font-size : 100%;
     text-align: left;
   }
 
   #work-mobile .sub-title {
-    font-size: 1rem;
+    font-size : 1rem;
     text-align: right;
   }
 
   .about {
     text-align: left;
-    width: 85%;
+    width     : 85%;
   }
 }

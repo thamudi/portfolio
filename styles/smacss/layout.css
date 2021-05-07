@@ -1,26 +1,26 @@
 .about {
-  width: 50%;
-  line-break: auto;
+  width      : 50%;
+  line-break : auto;
   line-height: normal;
   font-weight: lighter;
 }
 
 .intro p {
-  width: 50%;
-  margin: 0 auto;
+  width    : 50%;
+  margin   : 0 auto;
   font-size: 1.5em;
 }
 
 #menu li {
-  display: inline-block;
-  margin: 10px;
-  color: #000;
+  display   : inline-block;
+  margin    : 10px;
+  color     : #000;
   transition: 2s;
 }
 
 #menu li a {
   text-decoration: none;
-  transition: 1s;
+  transition     : 1s;
 }
 
 #menu li a,
@@ -31,36 +31,36 @@
 
 #menu {
   position: fixed;
-  top: 0;
-  left: 0;
-  height: 40px;
-  z-index: 70;
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  top     : 0;
+  left    : 0;
+  height  : 40px;
+  z-index : 70;
+  width   : 100%;
+  padding : 0;
+  margin  : 0;
 }
 
 .avatar {
-  opacity: 1;
+  opacity   : 1;
   transition: 1s ease;
 }
 
 .avatar-container {
-  position: relative;
+  position        : relative;
   background-color: #00c8ff41;
-  border: 2px solid black;
-  width: 20vw;
+  border          : 2px solid black;
+  width           : 20vw;
 }
 
 .middle {
-  transition: 1s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  transition   : 1s ease;
+  opacity      : 0;
+  position     : absolute;
+  top          : 50%;
+  left         : 50%;
+  transform    : translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  text-align: center;
+  text-align   : center;
 }
 
 #contact-me input:nth-of-type(5) {
