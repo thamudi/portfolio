@@ -5,8 +5,8 @@
  *  -----------------------------
  */
 
-// const END_POINT = 'http://127.0.0.1:8080/send-mail';
-const END_POINT = 'https://express-mailer-thamudi.herokuapp.com/send-mail';
+// const END_POINT = 'http://127.0.0.1:8080/mail/send-mail';
+const END_POINT = 'https://express-mailer-thamudi.herokuapp.com/mail/send-mail';
 const button = document.getElementById('contact-form-submit');
 
 class MailBody {
