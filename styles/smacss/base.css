@@ -1,31 +1,134 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap");
+@import '/styles/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700&display=swap');
 
 *,
 a,
 p {
-  font-family            : "Source Code Pro", monospace;
+  font-family            : 'Source Code Pro', monospace;
   -webkit-font-smoothing : antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color                  : whitesmoke;
 }
 
+body {
+  background-color: #151617;
+  margin          : 0;
+}
+
+header,
 a {
-  cursor    : pointer;
   transition: 1s ease;
 }
 
-iframe {
-  position: absolute;
-  top     : 0;
-  left    : 0;
-  width   : 100%;
-  height  : 100%;
-  z-index : -1;
+a {
+  cursor: pointer;
 }
 
 p {
-  margin: 1vh 0;
+  margin   : 1vh 0;
+  font-size: 2em;
 }
 
 img {
   width: 100%;
+}
+
+span {
+  font-size: 0.8rem;
+}
+
+.intro p {
+  font-size: 1.5em;
+}
+
+#menu li {
+  color     : #000;
+  transition: 2s;
+}
+
+#menu li a {
+  text-decoration: none;
+  transition     : 1s;
+}
+
+#menu li a,
+#menu li.active a {
+  padding: 9px 18px;
+  display: block;
+}
+
+#menu {
+  position: fixed;
+  top     : 0;
+  left    : 0;
+  height  : 40px;
+  z-index : 70;
+  width   : 100%;
+  padding : 0;
+  margin  : 0;
+}
+
+.about {
+  line-break : auto;
+  line-height: normal;
+  font-weight: lighter;
+}
+
+.avatar {
+  opacity   : 1;
+  transition: 1s ease;
+}
+
+.avatar-container {
+  background-color: #00c8ff41;
+}
+
+.middle {
+  transition   : 1s ease;
+  opacity      : 0;
+  transform    : translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+input,
+textarea {
+  background-color: transparent;
+  transition      : 1s ease;
+}
+
+.github-img {
+  height: 100px;
+}
+
+/**
+ *  -------------------
+ *  - Mobile Nav -
+ *  -------------------
+ */
+
+.overlay {
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+
+
+.overlay a {
+  font-size      : 36px;
+  transition     : 0.3s;
+  text-decoration: none;
+}
+
+
+
+.overlay .closebtn {
+  font-size  : 30px;
+  line-height: 1.4em;
+}
+
+.burger,
+.closebtn {
+  font-family: "Source Code Pro", monospace;
+  font-size  : 30px;
+  font-weight: 300;
 }

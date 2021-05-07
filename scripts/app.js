@@ -1,13 +1,13 @@
-"use strict";
+'use strict';
 /**
  *  -----------------------------
  *  - Global Variables -
  *  -----------------------------
  */
 
-// const END_POINT = "http://127.0.0.1:8080/send-mail";
-const END_POINT = "https://express-mailer-thamudi.herokuapp.com/send-mail";
-const button = document.getElementById("contact-form-submit");
+// const END_POINT = 'http://127.0.0.1:8080/send-mail';
+const END_POINT = 'https://express-mailer-thamudi.herokuapp.com/send-mail';
+const button = document.getElementById('contact-form-submit');
 
 class MailBody {
   constructor(fname, lname, email, subj, msg) {
@@ -47,18 +47,18 @@ function sendMail(event) {
 
   (async () => {
     const rawResponse = await fetch(END_POINT, {
-      method: "POST",
+      method: 'POST',
       headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
       },
       body: mail.stringifiedData,
     });
     const content = await rawResponse.json();
 
     content.status
-      ? renderMessage("modal-success")
-      : renderMessage("modal-fail");
+      ? renderMessage('modal-success')
+      : renderMessage('modal-fail');
   })();
 }
 
@@ -75,19 +75,19 @@ function toggleInfo(event) {
     if (path.className) {
       // check if the current path has a class
 
-      if (path.className.includes("info")) {
-        path.classList.toggle("active");
+      if (path.className.includes('info')) {
+        path.classList.toggle('active');
       }
 
       if (
-        path.className.includes("active") &&
-        path.className.includes("slide")
+        path.className.includes('active') &&
+        path.className.includes('slide')
       ) {
         // check if its an active slide and add an overlay
-        path.classList.toggle("work-overlay"); // toggle on/ off the overlay
+        path.classList.toggle('work-overlay'); // toggle on/ off the overlay
       }
 
-      if (path.className.includes("intro")) {
+      if (path.className.includes('intro')) {
         // check if its the parent element and show the text
 
         // not working ??
@@ -96,7 +96,7 @@ function toggleInfo(event) {
         // });
 
         const child = path.children[1];
-        child.classList.toggle("z-in-show"); // toggle on/ off the z-index of the text
+        child.classList.toggle('z-in-show'); // toggle on/ off the z-index of the text
       }
     }
   });
@@ -107,26 +107,26 @@ function renderMessage(modalId) {
 
   const loop = setInterval(() => {
     if (count <= 1) {
-      document.getElementById(modalId).classList.toggle("opa-show");
+      document.getElementById(modalId).classList.toggle('opa-show');
       count++;
     } else {
       clearInterval(loop);
     }
   }, 2000);
-  document.getElementById("contact-me").reset();
+  document.getElementById('contact-me').reset();
   button.disabled = false;
 }
 
 function toggleNav() {
-  const element = document.getElementById("mobile-menu");
-  if (element.classList.contains("active")) {
-    document.getElementById("mobile-menu").style.height = "0%";
-    element.classList.remove("active");
-    document.getElementById("burger-menu").innerHTML = "/";
+  const element = document.getElementById('mobile-menu');
+  if (element.classList.contains('active')) {
+    document.getElementById('mobile-menu').style.height = '0%';
+    element.classList.remove('active');
+    document.getElementById('burger-menu').innerHTML = '/';
   } else {
-    document.getElementById("mobile-menu").style.height = "100%";
-    element.classList.add("active");
-    document.getElementById("burger-menu").innerHTML = "../";
+    document.getElementById('mobile-menu').style.height = '100%';
+    element.classList.add('active');
+    document.getElementById('burger-menu').innerHTML = '../';
   }
 }
 
@@ -136,4 +136,4 @@ function toggleNav() {
  *  -------------------
  */
 
-document.getElementById("contact-me").addEventListener("submit", sendMail);
+document.getElementById('contact-me').addEventListener('submit', sendMail);

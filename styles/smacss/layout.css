@@ -1,26 +1,24 @@
+iframe {
+  position: absolute;
+  top     : 0;
+  left    : 0;
+  width   : 100%;
+  height  : 100%;
+  z-index : -1;
+}
+
 .about {
-  width      : 50%;
-  line-break : auto;
-  line-height: normal;
-  font-weight: lighter;
+  width: 50%;
 }
 
 .intro p {
-  width    : 50%;
-  margin   : 0 auto;
-  font-size: 1.5em;
+  width : 50%;
+  margin: 0 auto;
 }
 
 #menu li {
-  display   : inline-block;
-  margin    : 10px;
-  color     : #000;
-  transition: 2s;
-}
-
-#menu li a {
-  text-decoration: none;
-  transition     : 1s;
+  display: inline-block;
+  margin : 10px;
 }
 
 #menu li a,
@@ -29,40 +27,205 @@
   display: block;
 }
 
-#menu {
-  position: fixed;
-  top     : 0;
-  left    : 0;
-  height  : 40px;
-  z-index : 70;
-  width   : 100%;
-  padding : 0;
-  margin  : 0;
-}
-
-.avatar {
-  opacity   : 1;
-  transition: 1s ease;
-}
-
 .avatar-container {
-  position        : relative;
-  background-color: #00c8ff41;
-  border          : 2px solid black;
-  width           : 20vw;
+  position: relative;
+  border  : 2px solid black;
+  width   : 20vw;
 }
 
 .middle {
-  transition   : 1s ease;
-  opacity      : 0;
-  position     : absolute;
-  top          : 50%;
-  left         : 50%;
-  transform    : translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align   : center;
+  position  : absolute;
+  top       : 50%;
+  left      : 50%;
+  text-align: center;
 }
 
 #contact-me input:nth-of-type(5) {
   width: 100%;
+}
+
+input,
+textarea {
+  border       : unset;
+  border-top   : 2px solid rgb(140, 130, 115);
+  border-bottom: 2px solid rgb(140, 130, 115);
+  margin       : 1.5vh;
+  width        : 100%;
+  height       : 5vh;
+}
+
+textarea {
+  height: 10vh;
+  resize: none;
+}
+
+.flex>input {
+  flex-grow: 1;
+  width    : 40%;
+}
+
+#contact-me input:nth-of-type(5) {
+  width: 100%;
+}
+
+.section .fp-tableCell {
+  display        : flex;
+  justify-content: center;
+}
+
+#work-mobile {
+  display: none;
+}
+
+p.abs-class {
+  top: 40%;
+}
+
+/**
+ *  -------------------
+ *  - Mobile Nav -
+ *  -------------------
+ */
+.overlay {
+  height          : 0%;
+  width           : 100%;
+  position        : fixed;
+  z-index         : 1;
+  top             : 0;
+  left            : 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.overlay-content {
+  position  : relative;
+  top       : 25%;
+  width     : 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  display: block;
+  width  : max-content;
+  margin : auto;
+}
+
+.overlay .closebtn {
+  position     : absolute;
+  top          : 17px;
+  right        : 39px;
+  padding      : 0;
+  padding-right: 3px;
+}
+
+/* 
+ ----------------
+ ---- Mobile button ----
+ ----------------
+*/
+
+.burger {
+  display : none;
+  z-index : 1;
+  position: fixed;
+  cursor  : pointer;
+  top     : 20px;
+  right   : 45px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay {
+    overflow-y: auto;
+  }
+
+  .overlay a {
+    font-size: 20px;
+  }
+
+  .overlay .closebtn {
+    font-size: 40px;
+    top      : 15px;
+    right    : 35px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .intro p {
+    top: 20%;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  #menu {
+    display: none;
+  }
+
+  .section .fp-tableCell {
+    display: table-cell;
+  }
+
+  .item-center {
+    margin    : auto;
+    text-align: center;
+  }
+
+  .item-center.avatar-container {
+    width : 30vw;
+    margin: 10% auto;
+  }
+
+  .txt-right {
+    text-align: center;
+    margin    : auto 10%;
+  }
+
+  #contact-me.flex {
+    display: block;
+  }
+
+  textarea {
+    width : 90%;
+    height: 150px;
+  }
+
+  #contact-me input:nth-of-type(5) {
+    width: 90%;
+  }
+
+  .flex>input {
+    width : 90%;
+    height: 50px;
+  }
+
+  #work-desktop {
+    display: none;
+  }
+
+  #work-mobile {
+    display: block;
+  }
+
+  div#work-mobile .flex.flex-column.item-center {
+    padding: 5%;
+  }
+
+  #work-mobile .title {
+    font-size : 100%;
+    text-align: left;
+  }
+
+  #work-mobile .sub-title {
+    font-size : 1rem;
+    text-align: right;
+  }
+
+  .about {
+    text-align: left;
+    width     : 85%;
+  }
 }

@@ -68,9 +68,7 @@ textarea:focus {
   transition: 2s ease;
 }
 
-.burger {
-  display: none;
-}
+
 
 .white-smoke:hover {
   color: #00c8ff;
@@ -99,15 +97,5 @@ textarea:focus {
 
   to {
     transform: rotate(360deg);
-  }
-}
-
-@media screen and (max-width: 900px) {
-  .burger {
-    display: block;
-  }
-
-  #menu {
-    display: none;
   }
 }
